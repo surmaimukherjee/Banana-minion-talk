@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #f5e050;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+
+}
+
+body::before {
+    content: "";
+    background-image: url('/images/bg-minions.jpeg');
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}
+
+.navigation {
+    background-color: var(--primary-color);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border: 1px solid black;
+    position: relative;
+}
+
+.navigation h1 {
+    text-align: center;
+    padding: 1rem;
+    font-size: 3rem;
+}
+
+.navigation h1 img {
+    position: absolute;
+    max-width: 40px;
+    padding: 0 1rem;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#input {
+    height: 25vh;
+    width: 60%;
+    display: block;
+    padding: 1.5rem 1rem;
+    margin: 1.5rem;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    background-color: #fffce8;
+    text-align: center;
+    position: relative;
+}
+
+#btn-translate {
+    margin: 1rem;
+    border-radius: 1.5rem;
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: var(--primary-color);
+    position: relative;
+}
+
+#output {
+    height: 25vh;
+    width: 60%;
+    padding: 1.5rem 1rem;
+    margin: 1.5rem;
+    border: 1px solid black;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    text-align: center;
+    position: relative;
+    background-color: #fffce8;
+}
+
+.footer {
+    background-color: var(--primary-color);
+    text-align: center;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    position: relative;
+    border: 1px solid black;
+}
+
+.footer ul li {
+    display: inline-block;
+    padding: 1rem;
+}
+
+.footer i {
+    color: black;
+    font-size: 35px;
+
+}
+
+.footer p {
+    padding-bottom: 1rem;
+}
+
+.social-links {
+    list-style-type: none;
+}
+
+@media screen and (max-width: 414px) {
+
+    .navigation h1 {
+        display: flex;
+        justify-content: center;
+        font-size: 2.3rem;
+    }
+
+    .navigation h1 img {
+        right: 20px;
+        bottom: 10px;
+    }
+
+    #input {
+        font-size: 1rem;
+    }
+
+    #output {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    
+    .navigation h1 img {
+        right: 5px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    
+    .navigation h1 img {
+        right: 0;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    
+    .navigation h1 {
+        font-size: 2rem;
+    }
+}
